@@ -28,6 +28,15 @@ spring:
     ssl: ${SPRING_REDIS_SSL:true}
     timeout: 5000
 
+  data:
+    redis:
+      host: ${SPRING_REDIS_HOST}
+      port: ${SPRING_REDIS_PORT}
+      password: ${SPRING_REDIS_PASSWORD}
+      ssl:
+        enabled: ${SPRING_REDIS_SSL:true}
+      timeout: 5000
+
 eureka:
   client:
     service-url:
